@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-Second with Chai aur Code</title>
+</head>
+<body style="background-color:#212121 ; color:#fff;">
+    <div class="WeekDays">
+         <div class="day">monday</div>
+         <div class="day">tuesday</div>
+         <div class="day">wednesday</div>
+         <div class="day">thursday</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector(".WeekDays")
+   
+    <!-- using Basic properties of parent and children -->
+    /* console.log(parent);
+    console.log(parent.children);  // it is act like array like element because it is html collections
+    console.log(parent.children[1].innerHTML)
+    console.log(parent.firstElementChild)
+    console.log(parent.lastElementChild) */
+    
+/*
+    const dayOne=document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.parentNode);
+    console.log(dayOne.nextElementSibling);
+
+*/
+
+// most important to see the tree structure of this ,it will also count enter 
+console.log("Nodes : " ,parent.childNodes);
+
+
+     
+
+
+
+</script>
+</html>
