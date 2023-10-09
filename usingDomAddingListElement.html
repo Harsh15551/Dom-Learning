@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learning Dom</title>
+</head>
+<body style="background-color:#212121; color:#fff">
+    <ul class="language">
+        <li>Java</li>
+    </ul>
+</body>
+
+<script>
+
+    // Adding the element in list
+    function addlang(lang)
+    {
+        const list=document.createElement('li');
+        list.appendChild(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(list);
+       
+    }
+    addlang('c++');
+    addlang('html')
+    addlang('javascript');
+
+    // editing(removing) element in list
+    const secLang=document.querySelector('li:nth-child(2)')
+    console.log(secLang);
+    document.querySelector('.language').removeChild(secLang);
+
+    //editing(replacing) element in list
+    const firstLang=document.querySelector('li:first-child')
+    console.log(firstLang)
+    const newLi=document.createElement('li');
+    newLi.appendChild(document.createTextNode('Golang'));
+    firstLang.replaceWith(newLi)
+
+    
+
+
+
+</script>
+</html>
